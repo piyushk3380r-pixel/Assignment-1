@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Assignment 1 – Next.js + Bootstrap Tabs Builder
 
-## Getting Started
+This is a Next.js 15 + TypeScript + Bootstrap application created using create-next-app.  
+It was built as part of an assignment to demonstrate routing, reusable layouts, and dynamic tab functionality.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js 15 + TypeScript
+- Bootstrap 5 styling for layout and UI
+- Common Header and Footer across all pages
+- Pages:
+  - Home
+  - About (includes student name, student number, and a video embed)
+  - Tabs Page (main functionality)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Tabs Page
+- Add up to 15 dynamic tabs  
+  - If the limit is reached → popup alert ("tab limit of 15 is reached. cannot add more.")
+- Edit tab title, content, and content mode:
+  - Paragraphs (<p>)  
+  - Table (<table>, rows separated by newlines, columns by |)
+- Delete tabs (at least 1 remains)
+- Persistent tabs using localStorage (saved across reloads)
+- Unique tab IDs (no duplicate React keys, hydration-safe)
+- Generate HTML Output:
+  - Button → Output & Copy to Clipboard
+  - Creates a complete standalone HTML document with:
+   - <!DOCTYPE html>
+    - <html> <head><title></title> <body>…</body> </html>
+    - Inline CSS only (no <style> tags, no CSS classes)
+- Light/Dark theme toggle:
+  - Default = Light (white background, dark text)
+  - Dark = Dark background, light text
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+Tech Stack used
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js 15 (App Router)](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Bootstrap 5](https://getbootstrap.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Installation & Setup
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone this repo
+   bash
+   git clone https://github.com/<piyushk3380r-pixel>/assignment-1.git
+   cd assignment1
